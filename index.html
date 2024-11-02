@@ -52,7 +52,9 @@
             </div>
             <div class="navbar-end ">
                 <div class="bg-white hidden lg:flex items-center justify-between px-6 py-3 rounded-full">
-                    <input placeholder="search" type="text">
+                    <label>
+                        <input placeholder="search" type="text">
+                    </label>
                     <img alt="" src="images/search.png">
                 </div>
 
@@ -61,7 +63,7 @@
     </nav>
     <div class="container mx-auto lg:px-24 px-8">
         <div class="carousel w-full">
-            <div class="carousel-item relative w-full flex items-center justify-center h-[60vh] bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/banner1.png)] "
+            <div class="carousel-item relative w-full bg-center bg-cover flex items-center justify-center h-[60vh] bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/banner1.png)] "
                  id="slide1">
                 <div class="absolute top-10 right-10 bg-red-400 px-4 py-4 text-white rounded-lg">
                     <h6>Hot Deals</h6>
@@ -92,7 +94,8 @@
             <div class="carousel-item relative w-full flex items-center justify-center h-[60vh] bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/banner3.png)] "
                  id="slide3">
                 <div class="flex flex-col justify-center">
-                    <h1 class=" text-3xl lg:text-7xl text-white font-bold text-center">Exotic tastes at your <br> doorstep</h1>
+                    <h1 class=" text-3xl lg:text-7xl text-white font-bold text-center">Exotic tastes at your <br>
+                        doorstep</h1>
                     <p class="text-white text-center my-4">We supply highly quality organic products</p>
                     <button class="btn bg-red-400 border-none text-white mx-auto ">Button</button>
 
@@ -115,21 +118,333 @@
                     <a class="btn btn-circle" href="#slide1">❯</a>
                 </div>
             </div>
-            </div>
         </div>
-    <div class="h-[20vh] hidden w-2/5 mx-auto bg-white shadow-lg rounded-lg  -translate-y-24 lg:flex items-center justify-center" >
+    </div>
+    <div class="h-[20vh] hidden w-2/5 mx-auto bg-white shadow-lg rounded-lg  -translate-y-24 lg:flex items-center justify-center">
         <div class="flex items-center justify-center space-x-4 ">
-            <img src="images/fruit1.png" alt="">
-            <img src="images/fruit2.png" alt="">
-            <img src="images/fruit3.png" alt="">
-            <img src="images/fruit4.png" alt="">
-            <img src="images/fruit5.png" alt="">
+            <img alt="" src="images/fruit1.png">
+            <img alt="" src="images/fruit2.png">
+            <img alt="" src="images/fruit3.png">
+            <img alt="" src="images/fruit4.png">
+            <img alt="" src="images/fruit5.png">
 
         </div>
     </div>
 </header>
 <main>
+    <section class="my-24 py-24 container lg:px-24 px-8 mx-auto">
+        <div class="flex flex-col lg:flex-row  justify-between items-center ">
+            <div>
+                <h2 class="text-4xl font-bold mb-2">Deal of the Day</h2>
+                <p class="w-2/3  text-lg opacity-3">Contrary to popular belief, is not simply random text. It has roots
+                    in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+            <div>
+                <div class="grid auto-cols-max grid-flow-col gap-5 text-center">
+                    <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
+    <span class="countdown font-mono text-5xl">
+      <span style="--value:15;"></span>
+    </span>
+                        days
+                    </div>
+                    <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
+    <span class="countdown font-mono text-5xl">
+      <span style="--value:10;"></span>
+    </span>
+                        hours
+                    </div>
+                    <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
+    <span class="countdown font-mono text-5xl">
+      <span style="--value:24;"></span>
+    </span>
+                        min
+                    </div>
+                    <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
+    <span class="countdown font-mono text-5xl">
+      <span style="--value:${counter};"></span>
+    </span>
+                        sec
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <!--    why choose us-->
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="border-2 space-y-3 rounded-md flex flex-col items-center justify-center px-4 py-6 ">
+                <img alt="" src="images/fruit6.png">
+                <h6>$12.99 -$18.99</h6>
+                <div class="divider"></div>
+                <p>Apple</p>
+                <div>
+                    <div class="rating">
+                        <label>
+                            <input class="mask mask-star-2 bg-orange-400" name="rating-2" type="radio"/>
+                        </label>
+                        <label>
+                            <input
+                                    checked="checked"
+                                    class="mask mask-star-2 bg-orange-400"
+                                    name="rating-2"
+                                    type="radio"/>
+                        </label>
+                        <input class="mask mask-star-2 bg-orange-400" name="rating-2" type="radio"/>
+                        <input class="mask mask-star-2 bg-orange-400" name="rating-2" type="radio"/>
+                        <input class="mask mask-star-2 bg-orange-400" name="rating-2" type="radio"/>
+                    </div>
+                </div>
+                <button class="btn btn-ghost text-red-400 mt-3">details</button>
+
+            </div>
+
+            <div class="border-2 space-y-3 rounded-md flex flex-col items-center justify-center px-4 py-6 ">
+                <img alt="" src="images/fruit7.png">
+                <h6>$12.99 -$18.99</h6>
+                <div class="divider"></div>
+                <p>Orange</p>
+                <div>
+                    <div class="rating">
+                        <input class="mask mask-star-2 bg-orange-400" name="rating-2" type="radio"/>
+                        <input
+                                checked="checked"
+                                class="mask mask-star-2 bg-orange-400"
+                                name="rating-2"
+                                type="radio"/>
+                        <input class="mask mask-star-2 bg-orange-400" name="rating-2" type="radio"/>
+                        <input class="mask mask-star-2 bg-orange-400" name="rating-2" type="radio"/>
+                        <input class="mask mask-star-2 bg-orange-400" name="rating-2" type="radio"/>
+                    </div>
+                </div>
+                <button class="btn btn-ghost text-red-400 mt-3">details</button>
+            </div>
+
+            <div class="border-2 space-y-3 rounded-md flex flex-col items-center justify-center px-4 py-6 ">
+                <img alt="" src="images/fruit8.png">
+                <h6>$12.99 -$18.99</h6>
+                <div class="divider"></div>
+                <p>Dragon Fruit</p>
+                <div>
+                    <div class="rating">
+                        <input class="mask mask-star-2 bg-orange-400" name="rating-2" type="radio"/>
+                        <input
+                                checked="checked"
+                                class="mask mask-star-2 bg-orange-400"
+                                name="rating-2"
+                                type="radio"/>
+                        <input class="mask mask-star-2 bg-orange-400" name="rating-2" type="radio"/>
+                        <input class="mask mask-star-2 bg-orange-400" name="rating-2" type="radio"/>
+                        <input class="mask mask-star-2 bg-orange-400" name="rating-2" type="radio"/>
+                    </div>
+                </div>
+                <button class="btn btn-ghost text-red-400 mt-3">details</button>
+            </div>
+
+            <div class="border-2 space-y-3 rounded-md flex flex-col items-center justify-center px-4 py-6 ">
+                <img alt="" src="images/fruit9.png">
+                <h6>$12.99 -$18.99</h6>
+                <div class="divider"></div>
+                <p>Banana</p>
+                <div>
+                    <div class="rating">
+                        <input class="mask mask-star-2 bg-orange-400" name="rating-2" type="radio"/>
+                        <input
+                                checked="checked"
+                                class="mask mask-star-2 bg-orange-400"
+                                name="rating-2"
+                                type="radio"/>
+                        <input class="mask mask-star-2 bg-orange-400" name="rating-2" type="radio"/>
+                        <input class="mask mask-star-2 bg-orange-400" name="rating-2" type="radio"/>
+                        <input class="mask mask-star-2 bg-orange-400" name="rating-2" type="radio"/>
+                    </div>
+                </div>
+                <button class="btn btn-ghost text-red-400 mt-3">details</button>
+            </div>
+        </div>
+    </section>
+    <section class="my-48">
+        <div class="container mx-auto lg:px-24 px-8 ">
+            <div class="h-[70vh] rounded-md w-full  bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/banner1.png)]  bg-center bg-cover flex items-center justify-center text-center">
+                <div class="text-white">
+                    <h3>Meet The Team</h3>
+                    <p class="w-2/3 text-center mx-auto">Contrary to popular belief, is not simply random text. It has
+                        roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                    <div class="grid grid-cols-4 gap-4">
+                        <div class="h-24  bg-slate-100">
+
+                        </div>
+                        <div class="h-24  bg-slate-100">
+
+                        </div>
+                        <div class="h-24  bg-slate-100">
+
+                        </div>
+                        <div class="h-24  bg-slate-100">
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    why chose us-->
+    <section class="my-48">
+        <div class="container lg:px-24 px-8 mx-auto ">
+            <h1 class="text-center text-5xl">Why choose Us</h1>
+            <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin
+                literature from 45 BC, making it over 2000 years old.</p>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-24">
+                <div>
+                    <div class="flex space-x-3">
+                        <div class="h-12 w-12 rounded-full bg-slate-200 flex items-center justify-center">
+                            <img alt="" src="images/icons.png">
+                        </div>
+                        <div>
+                            <h1>Dedicated Team</h1>
+                            <div class="divider"></div>
+                            <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex space-x-3">
+                        <div class="h-12 w-12 rounded-full bg-slate-200 flex items-center justify-center">
+                            <img alt="" src="images/icons.png">
+                        </div>
+                        <div>
+                            <h1>Dedicated Team</h1>
+                            <div class="divider"></div>
+                            <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex space-x-3">
+                        <div class="h-12 w-12 rounded-full bg-slate-200 flex items-center justify-center">
+                            <img alt="" src="images/icons.png">
+                        </div>
+                        <div>
+                            <h1>Dedicated Team</h1>
+                            <div class="divider"></div>
+                            <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img alt="" src="images/whychoose1.png">
+                </div>
+                <div>
+                    <div class="flex space-x-3">
+                        <div class="text-right">
+                            <h1>Dedicated Team</h1>
+                            <div class="divider"></div>
+                            <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                        </div>
+                        <div class="h-12 w-12 rounded-full bg-slate-200 flex items-center justify-center">
+                            <img alt="" src="images/icons.png">
+                        </div>
+                    </div>
+
+                    <div class="flex space-x-3">
+                        <div class="text-right">
+                            <h1>Dedicated Team</h1>
+                            <div class="divider"></div>
+                            <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                        </div>
+                        <div class="h-12 w-12 rounded-full bg-slate-200 flex items-center justify-center">
+                            <img alt="" src="images/icons.png">
+                        </div>
+                    </div>
+
+                    <div class="flex space-x-3">
+                        <div class="text-right">
+                            <h1>Dedicated Team</h1>
+                            <div class="divider"></div>
+                            <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                        </div>
+                        <div class="h-12 w-12 rounded-full bg-slate-200 flex items-center justify-center">
+                            <img alt="" src="images/icons.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-48 bg-blue-500">
+        <div class="container  mx-auto lg:px-24 px-8 ">
+            <h1 class="text-5xl font-bold text-center mb-4">Contact Us Anytime</h1>
+            <p class="text-xl text-center w2/3 mx-auto ">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquid distinctio, eaque expedita itaque porro quisquam.</p>
+            <div class="grid grid-cols-1 lg:grid-cols-3 mt-12 gap-6">
+                <div class="lg:col-span-2">
+                    <div class="grid lg:grid-cols-2 gap-6 grid-cols-1  ">
+                        <div>
+                            <label>First Name </label>
+                            <input class="input mt-2 input-bordered w-full " placeholder="Type here" type="text"/>
+                        </div>
+                        <div>
+                            <label> Last Name</label>
+                            <input class="input mt-2 input-bordered w-full " placeholder="Type here" type="text"/>
+                        </div>
+                    </div>
+                    <div class="grid lg:grid-cols-2 gap-6 grid-cols-1  ">
+                        <div>
+                            <label class="mt-4">Email </label>
+                            <input class="input mt-4 input-bordered w-full " placeholder="Type here" type="email"/>
+                        </div>
+                        <div>
+                            <label > Phone</label>
+                            <input class="input mt-4 input-bordered w-full " placeholder="Type here" type="number"/>
+                        </div>
+
+                    </div>
+                    <div>
+                        <label> Bio
+                            <textarea class="textarea textarea-bordered w-full mt-4" placeholder="Bio"></textarea>
+                        </label>
+                    </div>
+                    <button class="bg-red-400 rounded-lg py-4 px-3 mt-3 text-black font-bold hover:bg-white"> Send Message</button>
+                </div>
+
+
+                <div>
+                    <div class="flex justify-center items-center flex-col mx-auto">
+                        <div class="bg-slate-200 p- rounded-lg w-16 h-16  flex items-center justify-center">
+                            <img class="h-6" src="images/icons.png" alt="">
+                        </div>
+                        <div class="text-center space-y-4">
+                            <h6 class="mt-2">Contact info</h6>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-center items-center flex-col mx-auto">
+                        <div class="bg-slate-200 p- rounded-lg w-16 h-16  flex items-center justify-center">
+                            <img class="h-6" src="images/icons.png" alt="">
+                        </div>
+                        <div class="text-center space-y-4">
+                            <h6 class="mt-2">Contact info</h6>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-center items-center flex-col mx-auto">
+                        <div class="bg-slate-200 p- rounded-lg w-16 h-16  flex items-center justify-center">
+                            <img class="h-6" src="images/icons.png" alt="">
+                        </div>
+                        <div class="text-center space-y-4">
+                            <h6 class="mt-2">Contact info</h6>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
 </main>
 
 </body>
